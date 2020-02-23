@@ -13,9 +13,14 @@
 		D0F6BAC8240201C900CCC7B4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F6BAC6240201C900CCC7B4 /* Main.storyboard */; };
 		D0F6BACA240201CA00CCC7B4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0F6BAC9240201CA00CCC7B4 /* Assets.xcassets */; };
 		D0F6BACD240201CA00CCC7B4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0F6BACB240201CA00CCC7B4 /* LaunchScreen.storyboard */; };
+		D0F6BAD52402027400CCC7B4 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D0F6BAD42402027400CCC7B4 /* GoogleService-Info.plist */; };
+		EC75C306EB9D3DBDBF38D12B /* Pods_Foodology.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D3510223CD0DF1BF9286684 /* Pods_Foodology.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F4F94C6980F7471FC711EF1 /* Pods-Foodology.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodology.release.xcconfig"; path = "Target Support Files/Pods-Foodology/Pods-Foodology.release.xcconfig"; sourceTree = "<group>"; };
+		5D3510223CD0DF1BF9286684 /* Pods_Foodology.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Foodology.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AC715E97131EB5CE80BA4E84 /* Pods-Foodology.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Foodology.debug.xcconfig"; path = "Target Support Files/Pods-Foodology/Pods-Foodology.debug.xcconfig"; sourceTree = "<group>"; };
 		D0F6BABD240201C800CCC7B4 /* Foodology.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Foodology.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0F6BAC0240201C900CCC7B4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0F6BAC2240201C900CCC7B4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +29,7 @@
 		D0F6BAC9240201CA00CCC7B4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D0F6BACC240201CA00CCC7B4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D0F6BACE240201CA00CCC7B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D0F6BAD42402027400CCC7B4 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +37,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EC75C306EB9D3DBDBF38D12B /* Pods_Foodology.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CDBCE2A8128660B89934EA02 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5D3510223CD0DF1BF9286684 /* Pods_Foodology.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		D0F6BAB4240201C800CCC7B4 = {
 			isa = PBXGroup;
 			children = (
 				D0F6BABF240201C800CCC7B4 /* Foodology */,
 				D0F6BABE240201C800CCC7B4 /* Products */,
+				D6398C40C913552001F7DEB6 /* Pods */,
+				CDBCE2A8128660B89934EA02 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +73,7 @@
 		D0F6BABF240201C800CCC7B4 /* Foodology */ = {
 			isa = PBXGroup;
 			children = (
+				D0F6BAD42402027400CCC7B4 /* GoogleService-Info.plist */,
 				D0F6BAC0240201C900CCC7B4 /* AppDelegate.swift */,
 				D0F6BAC2240201C900CCC7B4 /* SceneDelegate.swift */,
 				D0F6BAC4240201C900CCC7B4 /* ViewController.swift */,
@@ -67,6 +85,16 @@
 			path = Foodology;
 			sourceTree = "<group>";
 		};
+		D6398C40C913552001F7DEB6 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AC715E97131EB5CE80BA4E84 /* Pods-Foodology.debug.xcconfig */,
+				2F4F94C6980F7471FC711EF1 /* Pods-Foodology.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -74,9 +102,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0F6BAD1240201CA00CCC7B4 /* Build configuration list for PBXNativeTarget "Foodology" */;
 			buildPhases = (
+				37763A92102BC468031DB22C /* [CP] Check Pods Manifest.lock */,
 				D0F6BAB9240201C800CCC7B4 /* Sources */,
 				D0F6BABA240201C800CCC7B4 /* Frameworks */,
 				D0F6BABB240201C800CCC7B4 /* Resources */,
+				E971437449C65EC2D05488D1 /* [CP] Embed Pods Frameworks */,
+				E6CE2769F1981E59F2F88278 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -126,12 +157,72 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0F6BACD240201CA00CCC7B4 /* LaunchScreen.storyboard in Resources */,
+				D0F6BAD52402027400CCC7B4 /* GoogleService-Info.plist in Resources */,
 				D0F6BACA240201CA00CCC7B4 /* Assets.xcassets in Resources */,
 				D0F6BAC8240201C900CCC7B4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		37763A92102BC468031DB22C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Foodology-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E6CE2769F1981E59F2F88278 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodology/Pods-Foodology-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodology/Pods-Foodology-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foodology/Pods-Foodology-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E971437449C65EC2D05488D1 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodology/Pods-Foodology-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Foodology/Pods-Foodology-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Foodology/Pods-Foodology-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0F6BAB9240201C800CCC7B4 /* Sources */ = {
@@ -282,6 +373,7 @@
 		};
 		D0F6BAD2240201CA00CCC7B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AC715E97131EB5CE80BA4E84 /* Pods-Foodology.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -290,6 +382,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.WHSDS.Foodology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -299,6 +392,7 @@
 		};
 		D0F6BAD3240201CA00CCC7B4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2F4F94C6980F7471FC711EF1 /* Pods-Foodology.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +401,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = com.WHSDS.Foodology;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
